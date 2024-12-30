@@ -1,1 +1,16 @@
 
+Pseudocode
+
+Pick up phone book                       // Functions //
+Open to middle of phone book
+Look at page
+If person is on page                    // Conditionals //
+  call person
+Else if person is earlier in book      // Booleans Yes/No //
+  Open to middle of left half of book
+  Go back to line 3                    // loops //
+Else if person is later in book
+  Open to middle of right half of book
+  Go back to line 3
+Else 
+  Quit
