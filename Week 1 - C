@@ -6,6 +6,16 @@ Terminal
     make hello      // Compiles the program
     ./hello        // Runs the program
 
+Different Data Types in C:
+
+bool
+double
+char: 1 character
+float: decimal number
+int: number
+long
+string: word
+
 
 FIRST C PROGRAM: hello.c
 
