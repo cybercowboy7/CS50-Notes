@@ -16,7 +16,10 @@ int: number
 long
 string: word
 
+Notes for C:
 
+||  == or statement
+&&  == and statement
 
 
 FIRST C PROGRAM: hello.c
@@ -77,11 +80,11 @@ int main(void)
 {
     char c = get_char("Do you agree? ");
 
-    if (c == 'y')
+    if (c == 'y' || c == 'Y')            // c equal to y OR c equal to Y
     {
         printf("Agreed.\n");
     }
-    else if (c == 'n')
+    else if (c == 'n' || c == 'N')
     {
         printf("Do not agree.\n");
     }
@@ -90,7 +93,6 @@ int main(void)
         printf("You are indecisive.\n");
     }
 }
-
 
 
 
