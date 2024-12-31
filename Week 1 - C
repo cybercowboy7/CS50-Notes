@@ -10,11 +10,13 @@ Different Data Types in C:
 
 bool
 double
-char: 1 character
+char: 1 character. Must put single characters in single quotes '' instead of strings with double quotes
 float: decimal number
 int: number
 long
 string: word
+
+
 
 
 FIRST C PROGRAM: hello.c
@@ -62,6 +64,43 @@ int main(void)
         printf("x is equal to y\n");
     }
 }
+
+
+
+
+AGREE OR DISAGREE PROGRAM: agree.c
+
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+    char c = get_char("Do you agree? ");
+
+    if (c == 'y')
+    {
+        printf("Agreed.\n");
+    }
+    else if (c == 'n')
+    {
+        printf("Do not agree.\n");
+    }
+    else
+    {
+        printf("You are indecisive.\n");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
