@@ -7,7 +7,7 @@ Terminal
     ./hello        // Runs the program
 
 
-FIRST C PROGRAM:
+FIRST C PROGRAM: hello.c
 
 
 #include <cs50.h>
@@ -30,7 +30,7 @@ Different Format Codes in C:
 %s
 
 
-GREATER, LESS THEN, OR EQUAL TOO PROGRAM:
+GREATER, LESS THEN, OR EQUAL TOO PROGRAM: compare.c
 
 #include <cs50.h>
 #include <stdio.h>
