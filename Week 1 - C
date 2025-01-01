@@ -17,10 +17,31 @@ long: 64 bits
 string: word
 
 Notes for C:
-
 ||  == or statement
 &&  == and statement
 
+
+
+Variables in C:
+
+Syntax-
+    int calls = 3;        // int is the type of the variable
+                        // calls is the name of the variabl
+                        // = is the assignment operator
+                        // type name | value
+
+
+Inputting and Printing:
+
+int calls = get_int("Calls: ");
+
+Different Format Codes in C:
+
+%c
+%f
+%i
+%li
+%s
 
 
 
@@ -40,13 +61,6 @@ int main(void)
 
 
 
-Different Format Codes in C:
-
-%c
-%f
-%i
-%li
-%s
 
 
 GREATER, LESS THEN, OR EQUAL TOO PROGRAM: compare.c
