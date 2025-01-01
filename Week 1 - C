@@ -288,6 +288,24 @@ int main(void)
 
 
 
+CONTACT DETAILS PROGRAM: contactDetails.c
+
+ #include <cs50.h>
+ #include <stdio.h>
+
+ int main(void)
+ {
+    string name = get_string("What is your name? ");
+    int age = get_int("What is your age? ");
+    long phoneNumber = get_long("What is your phone number? ");
+    printf("Name: %s\nAge: %i\nNumber: %li\n", name, age, phoneNumber);
+ }
+
+
+
+
+
+
 
 
 
