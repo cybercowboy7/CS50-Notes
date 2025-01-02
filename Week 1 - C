@@ -30,11 +30,6 @@ void: This is a type but not a data type. Means a function won't return a value.
 
 
 
-Notes for C:
-||  == or statement
-&&  == and statement
-
-
 
 VARIABLES
 
@@ -43,6 +38,43 @@ Syntax-
                         // calls is the name of the variabl
                         // = is the assignment operator
                         // type name | value
+
+
+
+OPERATORS:
+
+Arithmetic operators:
++, -, *, /, % (modulus)
+x++    // Icrements by one
+x--    // decrements by one
+x *= 5;    // multiplies by five
+
+
+
+
+BOOLEAN EXPRESSIONS:
+
+Compares values
+True or False
+Every non zero value is equivalent to true, and zero is false
+Logical and relational operators are the main types of boolean expressions
+
+Logical Operators:
+AND (&&) is true if and only if both operands are true, otherwise false
+
+OR (||) is true if and only if at least one operand is true, otherwise false.
+
+NOT (!) inverts the value of its operand
+
+
+Relational Operators:
+Less than (<)
+Less than or equal to (<=)
+Greater than (>)
+Greater than or equalt (>=)
+Equality (==)
+Inequality (!=)
+
 
 
 Inputting and Printing:
@@ -58,6 +90,98 @@ Different Format Codes in C:
 %s
 
 
+CONDITIONAL STATEMENTS:
+
+- Allow your programs to make decisions and take different forks in the road, depending
+on the values of variables or user input
+
+if(and if-else, and if-else if-..-else)
+    - Use Boolean expressions to make decisions
+
+switch
+    - Use discrete cases to make decisions
+
+?:
+    - Use to replace a very simple if-else to make your code look fancy
+
+if (boolean-expression)
+{
+    
+}
+
+- If the expression evaluates to true, all lines of code between braces will execute from top to bottom
+- If false, those lines will not execute
+
+if (boolean-expression)
+{
+
+}
+else
+{
+
+}
+
+
+if (boolean-expression)
+{
+    // first branch
+}
+else if (boolean-expression2)
+{
+    // second branch
+}
+else
+{
+    // fourth branch
+}
+
+int x = GetInt();
+switch(x)
+{
+    case 5:
+        printf("Five, ");
+    case 4:
+        printf("Four, ");
+    case 3:
+        printf("Three, ");
+    case 2:
+        printf("Two, ");
+    case 1:
+        printf("One, ");
+    default:
+        printf("Blast-off!\n");
+}
+
+
+
+
+LOOPS:
+
+
+while
+    - Use when you want a loop to repeat an unknown number of times, and possibly not at all
+
+do-while
+    - use when you want a loop to repeat an unknown number of times, at least once
+
+for
+    - use when you want a loop to repeat a discrete number of tinmes, though you may know the number at 
+the moment the program is compiled.
+
+
+
+while (true)
+{
+
+}
+
+while (boolean-expr)
+{
+}
+- if evalueates to true, all lines of code will execute repeatedly, in order from top to bottom until 
+boolean-expr evaluates to false
+
+
 
 FOR LOOPS:
 
@@ -66,7 +190,17 @@ for (initialization; condition; update)
     // code to repeat
 }
 
+for (int i = 0; i < 10; i++)
+{
 
+}
+- Used to repeat the body of a loop a specified number of ties
+- The process undertaken in a for loop:
+    - Counter variable (here, i) is set
+    - the boolean expression is checked
+         - if false, the body of the loop does not execute
+         - if true, the body of the loop executes.
+    - the counter variable is incremented, and then the boolean expression is checked again
 
 
 WHILE LOOPS:
