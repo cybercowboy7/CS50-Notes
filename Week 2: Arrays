@@ -1,1 +1,25 @@
+COMPILATION:
 
+Source Code ---> Assembly Code ---> Machine Code (Binary)
+
+program <make> is used to compile our C programs using clang
+
+
+
+ARRAYS:
+
+Data type | name of array | size of array
+
+Example: int nights[5];
+
+To put values of items in the array:
+
+int nights[3] = {1, 2, 3};
+
+OR
+
+int nights[3];
+
+nights[0] = 1;
+nights[1] = 2;
+nights[2] = 3;
