@@ -23,3 +23,81 @@ int nights[3];
 nights[0] = 1;
 nights[1] = 2;
 nights[2] = 3;
+
+
+Example of arrays in code to double each integer in an array:
+
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+    int sequence[5];
+
+    sequence[0] = 1;
+    printf("%i\n", sequence[0]);
+
+    for (int i = 1; i < 5; i++)
+    {
+        sequence[i] = sequence[i - 1] * 2;
+        printf("%i\n", sequence[i]);
+    }
+}
+
+
+
+
+
+STRINGS IN ARRAYS:
+
+- Strings are arrays with characters that spell the strin
+
+- Characters are represented by integers in C
+  - A = 65
+  - B = 66 
+  - etc. (ASCII chart)
+
+
+ALPHABETICAL ORDER PROGRAM:
+
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+{
+    string userInput = get_string("Input: ");
+    int length = strlen(userInput);
+
+    for (int i = 0; i < length -1; i++)
+    {
+        if (userInput[i] > userInput[i +1])
+        {
+            printf("Not in Alphabetical order.\n");
+            return 0;
+        }
+    }
+    printf("Alphabetical order!\n");
+    return 0;
+}
+
+
+
+
+COMMAND LINE ARGUMENTS:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
