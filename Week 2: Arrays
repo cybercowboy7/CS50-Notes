@@ -86,6 +86,52 @@ int main(void)
 
 COMMAND LINE ARGUMENTS:
 
+// int tells us error code
+// main is the name of the program
+// void = takes no arguments
+// argc = integer type. Number of inputs program received including name of the program
+//     example: ./mario 8: argc = 2 inputs (program and 8)
+// string argv = array of strings
+
+int main(int argc, string argv[])
+{
+
+}
+
+
+
+
+ARGUMENT PRINTING PROGRAM:
+
+#include <cs50.h>
+#include <stdio.h>
+
+int main(int argc, string argv[])
+{
+    for (int i = 0; i < argc; i++)
+    {
+        printf("argv[%i] is %s\n", i, argv[i]);
+    }
+}
+
+
+
+ERROR HANDLING AND CONVERTING STRING TO INT USING STDLIB.H:
+
+#include <cs50.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(int argc, string argv[])
+{
+    if (argc != 2)
+    {
+        printf("Usage: ./practice number\n");
+        return 1;
+    }
+    int height = atoi(argv[1]);
+}
 
 
 
