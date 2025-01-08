@@ -136,6 +136,35 @@ int main(int argc, string argv[])
 
 
 
+FUNCTIONS:
+
+- A black box with a set of 0+ inputs and 1 output
+- Behavior is predictable
+- Why use functions?
+    - Organization
+    - Simplification
+    - Reusability
+
+- Function declaration
+    - First step to creating a function
+    - This gives compiler heads up that a user-written function appears in the code
+    - Fuction declarations should always go at the top of your code before you begin writing main()
+    - There is a standard form that every function declaration follows
+        return-type name(argument-list);
+    - return-type == what kind of variable the function will output
+    - name == what your want to call your function
+    - argument-list == comma-separated set of inputs to your function, each of which has a type and a name
+- Function definition
+        return-type name(argument-list)
+    - Only difference, no ";" after argument-list
+- Fuction Call
+    - Call a function by passing it appropriate arguments and assign its reutn value to something of the correct type
+
+- Function Misc.
+    - Some functions sometimes take no inputs. In this case, declare funtion as having a void argument-list
+    - Sometimes functions have no output. In this case, declare the function as having a void return type
+
+
 
 
 
