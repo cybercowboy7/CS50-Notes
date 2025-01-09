@@ -166,6 +166,20 @@ FUNCTIONS:
 
 
 
+VARIABLE SCOPE:
+
+- Scope: Characteristic of a variable that defines from which functions that variable may be accessed
+    - Local Variables: Only accessed within the functinos in which they are created
+        - local variables in C are passed by value in function alls
+        - The callee receives a copy of the passed variable, not the variable itself
+
+    - Global Variable: Accessed by any fuction in the program
+
+    - 
+
+
+
+
 
 
 
