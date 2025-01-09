@@ -7,8 +7,17 @@ program <make> is used to compile our C programs using clang
 
 
 ARRAYS:
+- Fundamental data structure
+- Use arrays to hold values of the same type at contiguous memory locations
+- In C elements of an Array are indexed starting at 0
+- last index = n - 1 and the first is = 0
+- Arrays are passed by reference rather than by values like variables
+
+
+Array Declaration:
 
 Data type | name of array | size of array
+
 
 Example: int nights[5];
 
@@ -85,6 +94,8 @@ int main(void)
 
 
 COMMAND LINE ARGUMENTS:
+
+
 
 // int tells us error code
 // main is the name of the program
@@ -175,7 +186,7 @@ VARIABLE SCOPE:
 
     - Global Variable: Accessed by any fuction in the program
 
-    - 
+
 
 
 
