@@ -1,1 +1,77 @@
+SEARCHING AND SORTING:
+(BIG O AND OMEGA NOTATION)
+
+- An algorithm is a set of steps to accomplish some task.
+
+- Linear Search
+  - Steps taken: 3 steps
+  - N
+  - O(N)
+
+- Binary Search
+  - Steps taken: 3 steps
+  - Bigger data sets make this algorithm better than linear search
+  - log2(n): Divide by two each time
+  - O(log(N))
+
+- What's the greatest number of steps this algorithm will ever take?
+- How many steps did each algorithm take?
+- What's the fewest number of steps this algorithm could ever take?
+  - Omega(1)
+
+- Common notations:
+  - O(1)
+  - O(log(N))
+  - O(N)
+  - O(N^2)
+  - Omega(1)
+  - Omega(log(N))
+  - Omega(N)
+  - Omega(N^2)
+
+
+Sort:
+
+- Merge Sort:
+  - O(Nlog(N))
+  - Omega(Nlog(N))
+  - Merge sort recursively divides the list into two repeatedly and then 
+  merges the smaller lists back into a larger one in the correct order.
+
+- Selection Sort:
+  - O(N^2)
+  - Omega(N^2)
+  - Selection sort iterates through the unsorted portions of a list, 
+  selecting the smallest element each time and moving it to its correct 
+  location.
+
+- Bubble Sort:
+  - O(N^2)
+  - Omega(N)
+  - Bubble sort compares pairs of adjacent values one at a time and swaps 
+  them if they are in the incorrect order. This continues until the list 
+  is sorted.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
