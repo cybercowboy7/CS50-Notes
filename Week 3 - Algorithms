@@ -53,6 +53,132 @@ Sort:
   is sorted.
 
 
+STRUCTURES:
+
+Syntax:
+
+typedef struct
+{
+  string name;
+  int votes;
+}
+candidates;
+
+candidate president;        // candidate president is similar to int number
+president.name = "Donald";
+president.votes = 1;
+
+OR
+
+candidate candidates[4];    // creates an array called candidates that holds 4 elements with candidate data type. 
+
+
+- Create a new type which holds a collection of other basic type
+
+- typedef struct
+  - give the struct a name that can be re-used in the rest of the file.
+
+- string name / int voutes == structure members
+
+- candidate == name of new data type
+
+
+STRUCTURE EXAMPLE:
+
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
+
+typedef struct
+{
+    string name;
+    int votes;
+}
+candidate;
+
+int main(void)
+{
+    const int num_candidates = 3;
+    candidate candidates[num_candidates];
+    candidates[0].name = "Donald Trump";
+    candidates[0].votes = 4;
+
+    candidates[1].name = "Kamala Harris";
+    candidates[1].votes = 2;
+
+    candidates[2].name = "Alexander K.";
+    candidates[2].votes = 350;
+
+
+    int highest_votes = 0;
+
+    for (int i = 0; i < num_candidates; i++)
+    {
+       if (candidates[i].votes > highest_votes)
+       {
+        highest_votes = candidates[i].votes;
+       }
+    }
+    printf("%i\n", highest_votes);
+
+    for (int i = 0; i < num_candidates; i++)
+    {
+        if (candidates[i].votes == 350)
+        {
+            printf("%s\n", candidates[i].name);
+        }
+    }
+
+}
+
+
+
+
+RECURSION:
+
+- Factorials
+  - 1! == 1
+  - 2! == 2 x 1
+  - 3! == 3 x 2 x 1
+
+- Recursive Call
+  - 4! = 4 x 3!
+  - 3! = 3 x 2!
+  - 2! = 2 x 1!
+  - 1! = 1
+
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
+
+int factorial(int n);
+
+int main(void)
+{
+
+    int n;
+    do
+    {
+        n = get_int("n: ");
+    }
+    while (n < 0);
+
+    printf("%i\n", factorial(n));
+}
+
+
+int factorial(int n)
+{
+    // Base Case
+    if (n == 1)
+    {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+
+
 
 
 
