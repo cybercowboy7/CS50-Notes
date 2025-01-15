@@ -7,12 +7,27 @@ SEARCHING AND SORTING:
   - Steps taken: 3 steps
   - N
   - O(N)
+  - Iterate across the array from left to right, searching for a specified element
+  - Repeat, starting at the first element:
+    - if the first element is what your looking for, stop
+    - else, move to next element
+  - WORST-case: Look through entire array of n elements
+  - BEST-case: Target is the first element of the array
 
 - Binary Search
   - Steps taken: 3 steps
   - Bigger data sets make this algorithm better than linear search
   - log2(n): Divide by two each time
   - O(log(N))
+  - Divide and conquer, reducing the search area by half each time, trying to find target number
+  - Array must be sorted, else we cannot make assumptions about array's contents
+  - Repeat until the (sub)array is of size 0:
+    - Calculate the middle point of current (sub)array
+    - If the target is at the middle, stop
+    - Otherwise, if target is less than middle, repeat, changing the end point to be just left of the middle
+    - Otherwise, if target is greater than middle, repeat, changing the startpoint to be just to the right of the middle
+  - WORST-case: Divide list n elements in half repeatedly to find target
+  - BEST-case: Target element is at the midpoint of full array
 
 - What's the greatest number of steps this algorithm will ever take?
 - How many steps did each algorithm take?
