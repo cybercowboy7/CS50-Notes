@@ -1,1 +1,18 @@
+POINTERS
+
+- Values are stored in an address in memory (0x500000)
+- 0x == anything after it is hexadecimal (Base 16)
+
+int *p = &calls;
+- * == pointer that stores the address of a type
+- *x == takes a pointer x and gets the value stored at that address
+- & == taxes x and gets its address
+
+- Reasons to use pointers
+  - You can pass variables to functions by reference, not just by copy
+  - Yuo can use dynamic memory (with malloc). Programs can now scale their usage of memory
+
+- Passing by Copy vs. Passing by reference
+  - 
+
 
