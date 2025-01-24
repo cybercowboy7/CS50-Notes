@@ -12,7 +12,72 @@ int *p = &calls;
   - You can pass variables to functions by reference, not just by copy
   - Yuo can use dynamic memory (with malloc). Programs can now scale their usage of memory
 
-- Passing by Copy vs. Passing by reference
-  - 
+Passing by value:
+A copy of the original variable is created and passed to the function.
+Changes made to the variable within the function do not affect the original variable.
+
+Passing by reference:
+A reference to the original variable is passed to the function.
+Changes made to the variable within the function affect the original variable.
+
+
+FILE I/O: READING FROM FILES
+
+- Opening and Closing Files
+  - fopen: opens a file for future reading/writing
+  - fclose: closes a file
+    - Always fclose all files you fopen
+
+FILE *f = fopen("hi.txt", "r");
+fclose(f);
+
+- Reading and writing files
+  - fread: reads data from a file into a buffer*
+    - From where are you reading
+    - To where are you reading
+    - What size is each block of data you want to read
+    - How many do we want to read at once
+
+fread(buffer, 1, 4, f);
+f == from where you are reading
+buffer == to where you are reading
+1 == size of each block if data
+4 == how many we want to read at once
+
+- Creat a program, pdf.c, that opens a file given as a command-line argument
+- Check if that file is a PDF. a PDF always starts with a four-byte sequence, corresponding to these integers:
+    - 37, 80, 68, 70
+
+
+#include <cs50.h>
+#include <stdio.h>
+#include <stdint.h>
+
+int main(int argc, string argv[])
+{
+    // Check first four bytes in given file
+    string filename = argv[1];
+    FILE *f = fopen(filename, "r");
+    uint8_t buffer[4];
+    fread(buffer, 1, 4, f);
+
+    for (int i = 0; i < 4; i++)
+    {
+      printf("%i\n", buffer[i]);
+    }
+    fclose(f);   
+}
+
+
+
+  - fwrite: writes data from a buffer* to a file
+    - 
+
+
+
+
+
+  - buffer= temp data storage from a file
+
 
 
