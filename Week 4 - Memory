@@ -1,8 +1,15 @@
-POINTERS
-
+HEXADECIMALS:
 - Values are stored in an address in memory (0x500000)
 - 0x == anything after it is hexadecimal (Base 16)
+- Hexadecimal = 0 1 2 3 4 5 6 7 8 9 a b c d e f
+  -  0xF = 15
+  - 0xE = 14
+- Computers use base-2 (binary)
+- To convert a binary number to hex, group four binary digits (bits) together from left to right.
+    - Pad the leftmost group with extra 0 bits at the front if necessary
+- Then use chart to convert those bits to something a bit more concise
 
+POINTERS:
 int *p = &calls;
 - * == pointer that stores the address of a type
 - *x == takes a pointer x and gets the value stored at that address
