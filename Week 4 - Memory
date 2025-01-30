@@ -13,7 +13,11 @@ POINTERS:
 int *p = &calls;
 - * == pointer that stores the address of a type
 - *x == takes a pointer x and gets the value stored at that address
-- & == taxes x and gets its address
+- & == takes x and gets its address
+
+- A pointer is a data item whose:
+    - value is a memory address
+    - type describes the data located at the memory address
 
 - Reasons to use pointers
   - You can pass variables to functions by reference, not just by copy
@@ -26,6 +30,78 @@ Changes made to the variable within the function do not affect the original vari
 Passing by reference:
 A reference to the original variable is passed to the function.
 Changes made to the variable within the function affect the original variable.
+
+- Simplest pointer available to use in C is the NULL pointer
+  - This pointer points to nothing
+
+- When you create a pointer and you do not set its value immediately, you should always
+set the value of the pointer to NULL
+
+- You can check whether a pointer is NULL using the equality operator ==
+
+
+DYNAMIC MEMORY ALLOCATION:
+
+- Use pointers to get access to a block of dynamically allocated memory at runtime
+
+- Dynamically allocated memory comes from a pool of memory known as the heap
+
+- Prior to this point, all memory we've been working with has been coming form a pool of 
+memory known as the stack.
+
+- We get this dynamically-allocated memory by making a call to the C std lib function 
+malloc(), passing as its paramter the number of bytes requested
+
+- After obtaining memory for you (if it can), malloc() will return a pointer to that memory
+
+- If malloc() cannot give you memory it will come back NULL
+
+- Dynamic memory is not auto returned to the system for later use when the function in which
+its created finishes execution
+
+- failing to return memory when your finished results in a memory leak which can compromise your system
+
+
+CALL STACKS:
+
+- When you call a function, the system sets aside space in memory for that function to do its necessary
+work.
+    - We frequently call such chunks of memory stack frames or function frames
+
+- More than one function's stack frame may exist in memory at a given time. If main() calls move(), 
+which then calls direction(), all three functions have open frames.
+
+- These frames are arranged in a stack. The frame for the most recently called function is always on the
+top of the stack
+
+- When a new function is called, a new frame is pushed onto the top of the stack and becomes the active frame
+
+- When a function finishes its work, its frame is popped off of the stack, and the frame immediately below it
+becomes the new, active, function on the top of the stack. This function picks up immediately where it left off
+
+
+FILE POINTERS:
+
+- The ability to read data from and write data to files is the primary means of storing persistent data, data
+that does not disappear when your program stops running
+
+- The abstraction of files that C provides is implemented in a data structure known as a FILE
+    - We will be using the pointer FILE*
+
+- The file manipulation functions all live in stdio.h
+    - All of them accept FILE* as one of their parameters, except for the function(), which
+is used to get a file pointer in the first place
+
+- Some of the most common file I/O fucitons are:
+fopen()
+fclose()
+fgetc()
+fputc()
+fread()
+fwrite()
+
+
+
 
 
 FILE I/O: READING FROM FILES
